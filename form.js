@@ -51,6 +51,7 @@ button.onclick = () => {
       }
     }
     localStorage.setItem('anagrams', anagrams.join('\n'));
+    localStorage.setItem('anagramword', anagramword);
     window.location.href = 'resultpage.html';
   }
 };

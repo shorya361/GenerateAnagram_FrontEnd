@@ -3,7 +3,7 @@ console.log(localStorage.getItem('anagrams'));
 textarea.value = localStorage.getItem('anagrams');
 if (textarea.value == '') {
   alert('No result found.');
-}
-if (document.readyState === 'complete') {
-  console.log('ready!');
+} else {
+  document.getElementById('h2').innerHTML =
+    'matching anagram of word "' + localStorage.getItem('anagramword') + '" ';
 }
